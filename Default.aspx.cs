@@ -13,5 +13,12 @@ namespace WebApplication2
         {
 
         }
+
+        
+
+        protected void AumentarHora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
