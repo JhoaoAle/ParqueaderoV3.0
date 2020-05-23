@@ -6,7 +6,7 @@
         <br />
         <br />
         <br />
-        <asp:TextBox ID="Hora" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="TextoHora" runat="server" Enabled="False"></asp:TextBox>
         <asp:Button ID="AumentarHora" runat="server" OnClick="AumentarHora_Click" Text="+" />
     </div>
 
