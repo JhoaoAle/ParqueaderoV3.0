@@ -47,7 +47,8 @@ namespace WebApplication2
         public int entrada;
         public int salida;
 
-
+        /* Prueba de concepto
+         */
         public Carro()
         {
             this.placa = "Unknown";
