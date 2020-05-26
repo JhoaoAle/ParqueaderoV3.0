@@ -51,13 +51,13 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Panel Panel3;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control placa_text.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox placa_text;
 
         /// <summary>
         /// Control Panel4.
@@ -69,13 +69,13 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Panel Panel4;
 
         /// <summary>
-        /// Control TextBox2.
+        /// Control casilla_in.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox casilla_in;
 
         /// <summary>
         /// Control PlaceHolder1.
@@ -87,13 +87,13 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
 
         /// <summary>
-        /// Control Button1.
+        /// Control btn_ingresar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btn_ingresar;
 
         /// <summary>
         /// Control Panel5.
@@ -159,21 +159,21 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Panel Panel9;
 
         /// <summary>
-        /// Control TextBox3.
+        /// Control casilla_out.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox casilla_out;
 
         /// <summary>
-        /// Control Button2.
+        /// Control btn_retirar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btn_retirar;
     }
 }
