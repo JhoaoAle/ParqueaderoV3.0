@@ -32,7 +32,7 @@
                         <asp:Panel ID="Panel8" runat="server">
                             Casilla<asp:Panel ID="Panel9" runat="server">
                                 <asp:TextBox ID="casilla_out" runat="server" Width="24px"></asp:TextBox>
-                                <asp:Button ID="btn_retirar" runat="server" Text="Retirar" />
+                                <asp:Button ID="btn_retirar" runat="server" OnClick="btn_retirar_Click" Text="Retirar" />
                             </asp:Panel>
                         </asp:Panel>
                     </asp:Panel>

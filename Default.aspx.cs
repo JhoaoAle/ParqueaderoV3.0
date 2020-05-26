@@ -67,7 +67,7 @@ namespace WebApplication2
             else if ((isNumeric == false) || result < 1 || result > 40)
             {
                 //TODO Mensaje de error relacionado con el espacio a ocupar
-                ;
+                
             }
             else
             {
@@ -87,10 +87,45 @@ namespace WebApplication2
                     MySqlCommand command2 = new MySqlCommand(query, cn);
                     command2.ExecuteNonQuery();
                     cn.Close();
+                    casilla_in.Text = "";
+                    placa_text.Text = "";
                 }
             }
             
 
+        }
+
+        protected void btn_retirar_Click(object sender, EventArgs e)
+        {
+            int n;
+            bool isNumeric = int.TryParse(casilla_out.Text, out n);
+            int result = Int32.Parse(casilla_out.Text);
+
+            if ((isNumeric == false) || result < 1 || result > 40)
+            {
+                //TODO Mensaje de error relacionado con el espacio a liberar
+            }
+            else
+            {
+                cn.Open();
+                MySqlCommand command = new MySqlCommand("SELECT `hora_entrada` FROM `parqueo` WHERE `casilla` ='" + result + "'", cn);
+                int hora_entra = System.Convert.ToInt32(command.ExecuteScalar());
+                int hora_sale = int.Parse(TextoHora.Text);
+                int tarifa = 3000;
+                int cobro = (hora_sale - hora_entra) * tarifa;
+
+
+                //Este apartado realiza la consulta para liberar un espacio
+                string query = "UPDATE `parqueo` SET `casilla`='" + result + "',`placa`=null,`hora_entrada`=null,`hora_salida`=null,`ocupado`= '0' WHERE `casilla`= '" + result + "'";
+                MySqlCommand command2 = new MySqlCommand(query, cn);
+                command2.ExecuteNonQuery();
+                cn.Close();
+                casilla_out.Text = "";
+                if (cobro <= 0)
+                    cobro += 24;
+                string factura = "Debe pagar un total de $" + cobro +" por concepto de parqueadero. Favor acercarse al punto de pago más cercano. \n tenga usted un buen día";
+                //TODO: Mostrar esto al usuario de algún modo
+            }
         }
     }
 
