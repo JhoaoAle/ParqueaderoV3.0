@@ -77,6 +77,7 @@ namespace WebApplication2
                 if (ocupado == 1)
                 {
                     //TODO Mensaje de error relacionado con la disponibilidad de la casilla
+                   
                 }
                 else
                 {
@@ -122,8 +123,8 @@ namespace WebApplication2
                 cn.Close();
                 casilla_out.Text = "";
                 if (cobro <= 0)
-                    cobro += 24;
-                string factura = "Debe pagar un total de $" + cobro +" por concepto de parqueadero. Favor acercarse al punto de pago más cercano. \n tenga usted un buen día";
+                    cobro += 24*tarifa;
+                string factura = "Debe pagar un total de $" + cobro +" por concepto de parqueadero. Favor acercarse al punto de pago más cercano. \n Tenga usted un buen día";
                 //TODO: Mostrar esto al usuario de algún modo
             }
         }
